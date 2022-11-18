@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Exercise2_4.Vistas.ListadoVid"
+             BackgroundImageSource="FondoDos"> 
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="listadoVideos" ItemTapped="listadoVideos_ItemTapped" HasUnevenRows="True" SeparatorVisibility="Default">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="{Binding id}" Margin="14" Grid.Row="0" Grid.Column="0" FontSize="18" IsVisible="true"/>
+                                    <Label Text="{Binding path}" Grid.Row="0" Grid.Column="1" FontSize="18" />
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

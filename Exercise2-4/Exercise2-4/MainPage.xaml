@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mm="clr-namespace:MediaManager.Forms;assembly=MediaManager.Forms"
+             x:Class="Exercise2_4.MainPage"
+             BackgroundImageSource="Fondopurple">
+    
+    <StackLayout>
+        <Image x:Name="sample1" HorizontalOptions="CenterAndExpand" Source="Rec.jpg" Scale="1" Margin="87,10,87,0"/>
+        
+        <mm:VideoView x:Name="videoV" HeightRequest="300" WidthRequest="200" BackgroundColor="#F4DAEF" IsFullWindow="False" ShowControls="True" Margin="10,10,10,0" />
+        
+        <Button x:Name="btngrabar" Text="Grabar Video" Margin="80,30,80,0" CornerRadius="15" Font="Arial" BackgroundColor="#BA0A4F"
+                FontAttributes="Bold" FontSize="20" Padding="10" BorderColor="Black" Visual="Default" Clicked="btngrabar_Clicked"/>
+        
+        <Button x:Name="btnsalvar" Text="Salvar" Margin="80,20,80,0" CornerRadius="15" Font="Arial" BackgroundColor="#EE72E2"
+                FontAttributes="Bold" FontSize="20" Padding="10" Visual="Default" Clicked="btnsalvar_Clicked"/>
+
+        <Button x:Name="btnLista" Text="Ver lista videos" Margin="80,20,80,0" CornerRadius="15" Font="Arial" BackgroundColor="#EDBDD2"
+                FontAttributes="Bold" FontSize="20" Padding="10" Visual="Default" Clicked="btnLista_Clicked"/>
+    </StackLayout>
+
+</ContentPage>
